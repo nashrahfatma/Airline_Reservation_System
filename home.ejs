@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smile Airlines - Book Your Flight</title>
+    <link rel="stylesheet" href="/pros.css/home.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Smile</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <!-- <li><a href="#flights">Flights</a></li> -->
+                <!-- <li><a href="http://127.0.0.1:5500/about.html">About</a></li> -->
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <section id="home" class="hero-section">
+        <h1>Welcome to Smile Airlines</h1>
+        <p>Your journey starts here. Book your flight now!</p>
+        <a href="/tcktbooking"> <button>Book Now</button></a>
+    </section>
+    <main>
+        <section class="search-section">
+            <h2>Book Your Flight</h2>
+            <form id="flight-search-form">
+                <div class="form-group">
+                    <label for="departure">Departure:</label>
+                    <input type="text" id="departure" placeholder="Enter departure city" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" placeholder="Enter destination city" required>
+                </div>
+
+                <!-- <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" required>
+                </div> -->
+
+                <button type="submit">Search Flights</button>
+            </form>
+        </section>
+
+        <section class="results-section">
+            <h2>Available Flights</h2>
+            <div id="flight-results">
+                <div class="flight">
+                    <h3>Flight 1</h3>
+                    <p><strong>From:</strong> Bhopal</p>
+                    <p><strong>To:</strong> Delhi</p>
+                    <p><strong>Airline:</strong> IndiGo</p>
+                    <p><strong>Time:</strong> 08:00 AM</p>
+                    <p><strong>Price:</strong> ₹3,200</p>
+                </div>
+
+                <div class="flight">
+                    <h3>Flight 2</h3>
+                    <p><strong>From:</strong> Indore</p>
+                    <p><strong>To:</strong> Mumbai</p>
+                    <p><strong>Airline:</strong> Air India</p>
+                    <p><strong>Time:</strong> 09:45 AM</p>
+                    <p><strong>Price:</strong> ₹3,800</p>
+                </div>
+
+                <div class="flight">
+                    <h3>Flight 3</h3>
+                    <p><strong>From:</strong> Jabalpur</p>
+                    <p><strong>To:</strong> Hyderabad</p>
+                    <p><strong>Airline:</strong> SpiceJet</p>
+                    <p><strong>Time:</strong> 01:15 PM</p>
+                    <p><strong>Price:</strong> ₹4,100</p>
+                    </div>
+
+                <div class="flight">
+                    <h3>Flight 4</h3>
+                    <p><strong>From:</strong> Gwalior</p>
+                    <p><strong>To:</strong> Bangalore</p>
+                    <p><strong>Airline:</strong> Akasa Air</p>
+                    <p><strong>Time:</strong> 06:50 AM</p>
+                    <p><strong>Price:</strong> ₹4,600</p>
+                    </div>
+
+                <div class="flight">
+                    <h3>Flight 5</h3>
+                    <p><strong>From:</strong> Indore</p>
+                    <p><strong>To:</strong> Pune</p>
+                    <p><strong>Airline:</strong> Vistara</p>
+                    <p><strong>Time:</strong> 11:00 AM</p>
+                    <p><strong>Price:</strong> ₹3,400</p>
+                    </div>
+
+
+            </div>
+        </section>
+    </main>
+    <section id="about" class="about-section">
+        <h2>Smile Airlines</h2>
+        <p>Welcome to VAYU Airlines, where your journey is our priority. We are dedicated to providing world-class
+            flight services with a focus on safety, comfort, and convenience. Whether you're traveling for business,
+            leisure, or any other reason, VAYU ensures a seamless experience from takeoff to landing.</p>
+
+        <div class="about-content">
+            <div class="mission">
+                <h3>Our Mission</h3>
+                <p>To connect people across the globe with safe, reliable, and affordable air travel, while continuously
+                    innovating and improving our services to exceed expectations.</p>
+            </div>
+
+            <div class="values">
+                <h3>Our Values</h3>
+                <ul>
+                    <li><strong>Safety:</strong> Your safety is our top priority.</li>
+                    <li><strong>Customer Satisfaction:</strong> We strive to ensure every passenger has a pleasant
+                        journey.</li>
+                    <li><strong>Innovation:</strong> Embracing new technologies for a better travel experience.</li>
+                    <li><strong>Sustainability:</strong> Committed to reducing our environmental impact.</li>
+                </ul>
+            </div>
+
+            <div class="services">
+                <h3>Our Services</h3>
+                <p>We offer a range of services to meet your needs, including:</p>
+                <ul>
+                    <li>International and domestic flights</li>
+                    <li>Comfortable seating and in-flight entertainment</li>
+                    <li>Airport lounge access for premium passengers</li>
+                    <li>Easy flight booking and ticket management</li>
+                    <li>24/7 customer support</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Smile Airlines</h3>
+                <p>Your wings to the world.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: support@vayuairlines.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Address: 123 Sky Street, Indore, MP</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Smile Airlines. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

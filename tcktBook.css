@@ -1,0 +1,220 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background: rgba(180, 185, 189, 0.11);
+    margin: 0;
+    padding: 30px;
+}
+
+.navbar {
+    background-color:black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ffcc00;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+h2 {
+    color: rgb(5, 117, 246);
+}
+
+.search-section {
+    background-color: white;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background: rgba(180, 185, 189, 0.11);
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: rgba(5, 117, 246, 0.621);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 10%;
+}
+
+button:hover {
+    background-color: rgb(5, 117, 246);
+}
+
+.results-section {
+    margin-top: 30px;
+}
+
+.flight {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.flight p {
+    margin: 5px 0;
+}
+
+.book-btn {
+    padding: 8px 12px;
+    background-color: #4bafc8be;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.book-btn:hover {
+    background-color: #398fc1;
+} */
+
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  /* background-image: url('/img/bg1.webp'); */
+  background-image: url('/img/vayu.pro.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #00796b;
+  margin-bottom: 20px;
+}
+
+h2 {
+  border-left: 5px solid #00796b;
+  padding-left: 10px;
+  margin-top: 30px;
+  color: #004d40;
+}
+
+form {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* max-width: 400px; */
+  min-width: 40vw;
+  width: 50vw;
+  margin: 40px auto;
+  background: linear-gradient(to right, #e0f7fa9a, #ffffff97);
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.77);
+}
+
+#for1 {
+  display: flex;
+  gap: 9%;
+  flex-wrap: wrap;
+}
+
+.input-grp {
+  /* background-color: red; */
+  display: flex;
+}
+
+input,
+select {
+  flex: 1;
+  padding: 6px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border: 1px solid #00796b;
+  outline: none;
+}
+
+button {
+  padding: 6px;
+  background-color: #00796b;
+  color: white;
+  font-size: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+@media (max-width: 600px) {
+  #for1 {
+    flex-direction: column;
+  }
+}

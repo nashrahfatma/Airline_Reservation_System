@@ -1,0 +1,113 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket booking.Page</title>
+    <link rel="stylesheet" href="../pro.css/tcktBook.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="./home.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="search-section">
+            <h2>Book Your Flight</h2>
+            <form id="flight-search-form">
+                <div class="form-group">
+                    <label for="departure">Departure:</label>
+                    <input type="text" id="departure" placeholder="Enter departure city" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" placeholder="Enter destination city" required>
+                </div>
+
+                <button type="submit">Search Flights</button>
+            </form>
+        </section>
+
+        <section class="results-section">
+            <h2 id="showHed">Available Flights</h2>
+            <div id="flight-results">
+            </div>
+        </section>
+    </main>
+    <script src="../pro.js/tcktBook.js"></script>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="../pros.css/tcktBook.css">
+</head>
+
+<body>
+    <h1>Book Your Flight</h1>
+    <form action="/tcktbooking" method="POST">
+
+        <div id="for1">
+
+            <div>
+                <h2>Travel Information</h2>
+                <label class="input-grp">Departure City: <input type="text" name="departureCity" required></label><br>
+                <label class="input-grp">Arrival City: <input type="text" name="arrivalCity" required></label><br>
+                <label class="input-grp">Departure Date: <input type="date" name="departureDate" required></label><br>
+                <label class="input-grp">Return Date: <input type="date" name="returnDate"></label><br>
+                <label class="input-grp">Trip Type:
+                    <select name="tripType">
+                        <option value="one-way">One-way</option>
+                        <option value="round-trip">Round-trip</option>
+                    </select>
+                </label><br>
+
+                <label class="input-grp">Class:
+                    <select name="travelClass">
+                        <option value="economy">Economy</option>
+                        <option value="business">Business</option>
+                        <option value="first">First</option>
+                    </select>
+                </label><br>
+            </div>
+
+            <div id="for2">
+                <h2>Traveler Info</h2>
+                <label class="input-grp">Full Name: <input type="text" name="fullName" required></label><br>
+                <label class="input-grp">Gender:
+                    <select name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label><br>
+                <label class="input-grp">Date of Birth: <input type="date" name="dob" required></label><br>
+                <label class="input-grp">Phone: <input type="tel" name="phone" required></label><br>
+                <label class="input-grp">Nationality: <input type="text" name="nationality" required></label><br>
+                <label class="input-grp">Passport Number: <input type="text" name="passportNumber" required></label><br>
+                <label class="input-grp">Passport Expiry: <input type="date" name="passportExpiry" required></label><br>
+            </div>
+
+        </div>
+
+        <div id="forB">
+            <button type="submit">Book Flight</button>
+        </div>
+
+    </form>
+</body>
+
+</html>
+
+<!-- 48b62e52da67feb7776437d181e6e11f -->
